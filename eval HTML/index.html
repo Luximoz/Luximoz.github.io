@@ -1,0 +1,268 @@
+<!-- document en une seulo page web avec des liens hyper textes permettant la navigation -->
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content=""> <!-- completez la balise meta en indiquant votre nom -->
+		<!-- MANQUE DE TEMPS! -->
+		<style>
+			section>h1{
+				text-align:center;
+				background:#6495ed;
+				padding:10px;
+			}
+			article>h2{
+				font-size:18px;
+				color:#6495ed;
+				text-align:center;
+			}
+			footer>div{
+				text-align:center;
+			}
+			#textepresentation{
+				border:4px dotted #000;
+				padding:10px;
+				font-weight:bold;
+				text-decoration:underline;
+				font-style:italic;
+			}
+			.presentol{
+				margin-left:350px;
+			}
+			.presentul{
+				margin-top:80px;
+			}
+			
+			.presentimg{
+				border:4px solid #000;
+				width:350px;
+				height:140px;
+				margin:10px;
+				float:left;
+			}
+			.presentimg>img{
+				width:350px;
+				height:140px;
+				
+			}
+			
+			
+			.box{
+				display:flex;
+				gap:10px;
+			}
+			.article>p{
+				text-align:justify;
+			}
+			
+			
+			
+			/* code css ici */
+			/*
+			🗸	les titres des sections doivent être centrés, avec un fond de couleur #6495ed et un espacement interne de 10px
+			
+			🗸	les titres des articles sont en police taille 18, en texte de couleur #6495ed et centrés
+			
+			🗸	le pied de page doit avoir son texte centré
+			
+			
+			
+			*/
+			
+		</style>
+	</head>
+
+
+	<body>
+		<header id="top">
+			<img src="logo1600.png"></img><!-- 🗸	ajouter image du logo -->
+		</header>				
+
+		<nav>
+		<!-- 🗸	ajouter des liens hypertexte vers les sections -->	
+			<ul>
+				<li>
+					<a href="#presentation">Présentation</a>
+				</li>
+				<li>
+					<a href="#news">Actualites</a>
+				</li>
+				<li>
+					<a href="#tarifs">Tarifs 2021</a>
+				</li>
+				<li>
+					<a href="#contact">Nous contacter</a>
+				</li>
+			</ul>
+		</nav>
+			
+		<section id="presentation">
+			<h1>Notre école <a href="#top">&uarr;</a></h1>
+			<div id="textepresentation">
+				<!-- 🗸	le bloc doit avoir une bordure pointillée et un espacement interne de 10px -->
+				<!-- 🗸	ajouter image de la présentation avec une bordure noire, une larguer de 350 pixels, une marge de 10 pixels			l'image*, largeur* -->
+				<!-- 🗸	le texte doit flotter à droite de l'image -->
+				<!-- 🗸	ajouter les mises en forme des textes en gras, souligné et italique les textes-->
+				<!-- 🗸	organiser le texte avec les listes à puces numérotées et non numérotées -->
+				<!-- 🗸	ajouter un lien de mail pour l'adresse mail -->
+				<div class="presentimg">
+					<img src="presentation.jpg"></img>
+				</div>
+					<div class="presentol">
+						<ul>
+							<li>
+								L’école de musique municipale de la ville de D. dispense des cours d’instruments individuels ou 
+								collectifs pour enfants, adolescents et adultes, en fonction des places disponibles.
+							</li>
+							<li>
+								Consultez notre planning et nos tarifs pour voir quels cours pourraient vous interesser. 
+							</li>
+							<br/>
+							<li>
+								La marche à suivre ensuite pour vous inscrire est la suivante : 
+							</li>
+						</ul>
+					</div>
+					<div class="presentul">
+						<ol>
+							<li>Télécharger le dossier d'inscription sur notre site pour réunir les piéces demandées lors de l'inscription.</li>
+							<li>Nous contacter pour savoir s'il reste des places dans ce cours :</li>
+							<li>Soit par mail à <a href="mailto:contact@ecolemusique.fr">contact@ecolemusique.fr</a>.</li>
+							<li>Soit par téléphone au 06 00 00 00 00.</li>
+							<li>Soit en venant directement au secrétariat aux horaires des cours.</li>
+							<li>Une fois que vous avez eu la confirmation de la reservation de votre place au cours, nous envoyer ou déposer au secrétariat le dossier d'inscription complet.</li>
+						</ol>
+					</div>
+			</div>
+		</section>
+			
+		<section id="news" >
+			<h1>Dernières actualités <a href="#top">&uarr;</a></h1>
+			<!-- 🗸	les 3 articles doivent être alignés en flexbox. -->
+			<!-- 🗸	Chaque article doit avoir une marge à gauche et à droute de 10 pixels  et le texte doit être justifié 		droite*-->
+			<div class="box">
+				<article class="article">
+					<h2>Concert de fin d'année</h2>
+					<p>Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amicorum mariti inops cum liberis uxor alitur Reguli et dotatur ex aerario filia Scipionis, cum nobilitas florem adultae virginis diuturnum absentia pauperis erubesceret patris.</p>
+
+				</article>
+				<article class="article">
+					<h2>Audition de printemps</h2>
+					<p>Nam sole orto magnitudine angusti gurgitis sed profundi a transitu arcebantur et dum piscatorios quaerunt lenunculos vel innare temere contextis cratibus parant, effusae legiones, quae hiemabant tunc apud Siden, isdem impetu occurrere veloci. et signis prope ripam locatis ad manus comminus conserendas denseta scutorum conpage semet scientissime praestruebant, ausos quoque aliquos fiducia nandi vel cavatis arborum truncis amnem permeare latenter facillime trucidarunt.</p>
+				</article>
+				<article class="article">
+					<h2>Les badges sont arrivés</h2>
+					<p>Et licet quocumque oculos flexeris feminas adfatim multas spectare cirratas, quibus, si nupsissent, per aetatem ter iam nixus poterat suppetere liberorum, ad usque taedium pedibus pavimenta tergentes iactari volucriter gyris, dum exprimunt innumera simulacra, quae finxere fabulae theatrales.</p>
+				</article>
+			</div>
+		</section>
+			
+		<section id="tarifs">
+			<h1>Nos tarifs 2021 <a href="#top">&uarr;</a></h1>
+			
+			<!-- mettre les informations dans un tableau avec une bordure de couleur #6495ed -->
+			<!-- les cellules ont une bordure fine de couleur #6495ed  -->
+			<!-- les entetes de colonnes ont un fond de couleur #D0E3FA et un texte centré -->
+			<!-- les cellules des tarifs pour la chorale et la formation musicale doivent être fusionnées -->
+			<!-- l'atelier new orleans doit pointer (lien hypertexte) vers le site de https://fr.wikipedia.org/wiki/Jazz_Nouvelle-Orl%C3%A9ans en ouvrant le lien dans une nouvelle fenetre du navigateur -->
+
+			<table>
+				<tr>
+					<!-- entetes des colonnes -->
+					<th>Cours</th>
+					<th>Tarifs annuels pour les habitants de la commune (hors adhésion)</th>
+					<th>Tarifs annuels pour les autres inscrits (hors adhésion)</th>
+				</tr>
+				<tr>
+					<!-- données du tableau -->
+					<td>Instrument 30 minutes / sem</td>
+					<td>490 euros</td>
+					<td>530 euros</td>
+				</tr>
+				<tr>
+					<td>Instrument 45 minutes / sem</td>
+					<td>655 euros</td>
+					<td>705 euros</td>
+				</tr>
+				<tr>
+					<td>Instrument 1 heure / sem</td>
+					<td>970 euros</td>
+					<td>1050 euros</td>
+				</tr>
+					<td>Initiation musical (0-3 ans), éveil musical (3-5 ans) ou éveil instrumental (CP-CE1)</td>
+					<td>260 euros</td>
+					<td>300 euros</td>
+				</tr>
+				<tr>
+					<td>Chorale (à partir du CP)</td>
+					<td>Gratuit pour les élèves inscrits en instrument ou 110 euros pour les élèves non inscrits en instrument</td>
+					<td>Gratuit pour les élèves inscrits en instrument ou 150 euros pour les élèves non inscrits en instrument</td>
+				</tr>
+				<tr>
+					<td>Formation musicale (enfants et adultes)</td>
+					<td>Gratuit pour les élèves inscrits en instrument ou 110 euros pour les élèves non inscrits en instrument</td>
+					<td>Gratuit pour les élèves inscrits en instrument ou 150 euros pour les élèves non inscrits en instrument</td>
+				</tr>
+				<tr>
+					<td>Atelier New Orleans (1h30 par semaine, à partir de 14 ans et 2 années de pratique ou 1 an sur audition)</td>
+					<td>300 euros pour les adultes. 190 euros pour les moins de 18 ans.</td>
+					<td>350 euros pour les adultes. 190 euros pour les moins de 18 ans.</td>
+				</tr>
+			</table>
+		</section>
+			
+			
+			
+		<section id="contact">
+			<h1 >Nous contacter <a href="#top">&uarr;</a></h1>
+			
+			<p>Si vous souhaitez nous contacter, vous pouvez nous appeler aux horaires des cours au 06 00 00 00 00.
+			<!-- ajouter un saut de ligne -->
+			Vous pouvez également nous contacter au travers du formulaire ci-dessous :</p>
+			
+			<form action="" method="">
+				<!-- completez le formulaire contenant les questions suivantes -->
+				Qui êtes-vous ? <!-- réponse attendue de type texte et obligatoire. le champ texte contient l'exemple "Prénom NOM" -->
+
+
+				Etes vous déjà inscrit à l'école	oui		non  <!-- question à choix unique -->
+
+
+				Quel service voulez vous contacter ? <!-- liste déroulante -->
+				<!-- Valeurs de la liste déroulante : -->
+				Comptabilité
+				Secrétariat
+				Equipe pédagogique
+				Autres
+				
+				<!-- saut de ligne et ligne continue -->
+				
+				Votre message : <!-- réponse attendue de type zone de texte sur 5 lignes et 8s0 colonnes. le champ contient l'exemple "Votre message..." -->
+				
+				<!-- ajoutez un style "attention" pour que ce texte soit en italique et de couleur rouge -->
+				<p>Si vous n'êtes pas déjà inscrits à l'école, laissez-nous vos coordonnées dans le message pour être recontactés rapidement</p>
+				
+				Preferez-vous qu'on vous recontacte :  : <!-- question à choix multiples -->
+				<!-- Valeurs du choix multiple : -->
+				Le matin
+				L'aprés-midi
+				En début de soirée
+				
+				<div >
+					<button type="submit" >Envoyer</button>
+				</div>
+			</form>
+		</section> 
+		
+		
+		
+
+	<footer>
+		<!-- le texte "Ecole de musique" doit pointer vers le site de l'école de musique https://ecolesmusique.fr -->
+		<div>Copyright &copy; 2021 Ecole de musique. All rights reserved.</div>
+	</footer>
+		
+		
+		
+	</body>
+</html>
